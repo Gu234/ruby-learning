@@ -1,4 +1,3 @@
-
 class Person
   def initialize (first_name, last_name)
     @first_name = first_name
@@ -14,17 +13,19 @@ class Person
   end
 
   def first_name=(first_name)
-     @first_name = first_name
+    @first_name = first_name
   end
 
   def last_name=(last_name)
-      @last_name = last_name
+    @last_name = last_name
   end
 
   def full_name
     [@first_name, @last_name].join(' ')
   end
 end
+
+###################################################
 
 person = Person.new('Jan', 'Kowalski')
 puts person.full_name
